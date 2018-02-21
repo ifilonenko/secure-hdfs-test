@@ -11,8 +11,8 @@
 > tar -xvf spark-2.2.0-k8s-0.5.0-bin-2.7.3.tgz
 > cd spark-2.2.0-k8s-0.5.0-bin-2.7.3
 > docker build -t spark-base:latest -f dockerfiles/spark-base/Dockerfile .
-> docker build -t spark-driver:latest -f dockerfiles/spark-driver/Dockerfile .
-> docker build -t spark-executor:latest -f dockerfiles/spark-executor/Dockerfile .
+> docker build -t spark-driver:latest -f dockerfiles/driver/Dockerfile .
+> docker build -t spark-executor:latest -f dockerfiles/executor/Dockerfile .
 > docker build -t spark-init:latest -f dockerfiles/init-container/Dockerfile .
 ```
 #### 2. Launch a stable single-noded, pseudo-distributed, kerberized, hadoop cluster
